@@ -35,19 +35,19 @@ pip3 install -r requirements.txt
 
 Install kernel
 
-´´´
+```
 ipython kernel install --user --name=.venv
-´´´
+```
 
 ##### Even though AIF360 is installed as a dependency, you might need the full package:
 
-´´´
+```
 git clone https://github.com/IBM/AIF360.git
 
 cd AIF360
 
 pip install .
-´´´
+```
 
 ## Authors
 
