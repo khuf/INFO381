@@ -49,6 +49,10 @@ cd AIF360
 pip install .
 ```
 
+### Problems and fixes
+#### Ubuntu
+When installing requirements in Ubuntu, change numpy version in requirements to numpy==1.16.3
+
 ## Authors
 
 * [**khuf**](https://github.com/khuf)
