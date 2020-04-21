@@ -54,11 +54,7 @@ class EmploymentDataset(StandardDataset):
                 skipinitialspace=True, na_values=na_values)
         except IOError as err:
             print("IOError: {}".format(err))
-            print("To use this class, please download the following files:")
-            print("\n\thttps://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data")
-            print("\thttps://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.test")
-            print("\thttps://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.names")
-            print("\nand place them, as-is, in the folder:")
+            print("Ensure that dataset files exist in <project_root>/data/raw/")
             print("\n\t{}\n".format(os.path.abspath(os.path.join(
                os.path.abspath(__file__), '..', 'data', 'raw', 'employment'))))
             import sys
