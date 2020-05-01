@@ -1,7 +1,5 @@
 import os
-
 import pandas as pd
-
 from aif360.datasets import StandardDataset
 
 default_mappings = {
@@ -11,14 +9,6 @@ default_mappings = {
         }
 
 
-#def default_preprocessing(df):
-#    cat = pd.Categorical(df.Education, categories=["No high school diploma", "High school", "Some college, no degree",\
-#                                                            "Professional degree", "Associate degree", "Bachelor's degree", "Master's degree", "Doctorate degree"], ordered=True)
-#    labels, unique = pd.factorize(cat, sort=True)
-#
-#    # Assign labels
-#    df.Education = labels
-#    return df
 class EmploymentDataset(StandardDataset):
     
     def __init__(self, label_name='EmploymentStatus',
@@ -27,7 +17,7 @@ class EmploymentDataset(StandardDataset):
             privileged_classes=[['White'], ['Male']],
             instance_weights_name=None,
             categorical_features=['Education', 'Age', 'Hispanic', 'Industry', 'Citizenship', 'Married'],
-            features_to_keep=[], features_to_drop=['CountryOfBirthCode', 'MetroAreaCode', 'PeopleInHousehold', 'Region'],
+            features_to_keep=[], features_to_drop=['CountryOfBirthCode', 'PeopleInHousehold'],
             na_values=['NA'], custom_preprocessing=None,
             metadata=default_mappings):
 
