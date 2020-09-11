@@ -57,4 +57,5 @@ When installing requirements in Ubuntu, change numpy version in requirements to 
 
 * [**khuf**](https://github.com/khuf)
 * [**geekgeek**](https://github.com/geekgeek)
+* [**TorAasheim**](https://github.com/TorAasheim)
 * [**kingofthenorth871**](https://github.com/kingofthenorth871)
